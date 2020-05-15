@@ -1,4 +1,4 @@
-package com.dubbo.lcn;
+package com.dubbo.lcn.serviceB;
 
 import org.apache.dubbo.config.spring.context.annotation.EnableDubbo;
 import org.springframework.boot.SpringApplication;
@@ -8,13 +8,13 @@ import org.springframework.boot.web.servlet.ServletComponentScan;
 
 /**
  * @author wuzongzhao
- * @date 2020/5/15 11:41
+ * @date 2020/5/15 16:46
  */
 @EnableDubbo
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
 @ServletComponentScan
-public class AServerApplication {
+public class ServiceBApplication {
     public static void main(String[] args) {
-        SpringApplication.run(AServerApplication.class, args);
+        SpringApplication.run(ServiceBApplication.class, args);
     }
 }
