@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dubbo.lcn.serviceA.produce.mapper.ServerMapper">
+
+    <!--新增用户-->
+    <insert id="insertUser" useGeneratedKeys="true" keyProperty="id" parameterType="com.dubbo.lcn.serviceA.produce.vo.UserVo">
+        INSERT INTO
+        `user` (`userName`, `phone`)
+        VALUES
+            (#{userName}, #{phone});
+    </insert>
+
+</mapper>
